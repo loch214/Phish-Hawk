@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phish-Hawk Analysis Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Phish-Hawk 🦅</h1>
+        <p>Analyze email files, pasted content, or suspicious links.</p>
+    </header>
+
+    <div class="tab-container">
+        <button class="tab-button active" data-tab="file">Upload File</button>
+        <button class="tab-button" data-tab="paste">Paste Email Source</button>
+    </div>
+
+    <main>
+        <!-- File Upload Form -->
+        <form id="file-form" class="tab-content active">
+            <input type="file" id="email-file-input" required>
+            <button type="submit">Analyze File</button>
+        </form>
+
+        <!-- Paste Text Form -->
+        <form id="paste-form" class="tab-content">
+            <textarea id="email-content-input" rows="10" placeholder="Paste the full email source here... (Look for a 'Show Original' or 'View Source' option in your email client)"></textarea>
+            <button type="submit">Analyze Pasted Content</button>
+        </form>
+
+        <div id="results-container" class="hidden">
+            <h2>Analysis Report</h2>
+            <div id="report"></div>
+        </div>
+    </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
