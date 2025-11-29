@@ -29,11 +29,10 @@ public class EmailAnalysisService {
 
     // Common Scam Phrases
     private static final List<String> SCAM_PHRASES = Arrays.asList(
-            "free spins", "claim your bonus", "no deposit needed", "jackpot", "winner",
-            "lottery", "click here", "verify your account", "suspended", "urgent action",
-            "account locked", "update payment", "social security", "credit card",
-            "bank account", "limited time", "act now", "promo code", "unsubscribe",
-            "cloud storage", "payment method has expired", "subscription id"
+            "free spins", "claim your bonus", "no deposit needed", "casino",
+            "verify your account", "social security number", "confirm your identity",
+            "wire transfer", "inheritance", "lottery winner", "you have won",
+            "act immediately", "account suspended", "your account has been locked"
     );
 
     // Suspicious Keywords in Sender Domain
