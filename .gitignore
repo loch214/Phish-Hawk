@@ -1,10 +1,26 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Compiled Java class files
+*.class
 
-### STS ###
+# Log files
+*.log
+
+# Maven build output
+/target/
+
+# Maven wrapper folder
+.mvn/
+
+# IDE-specific configuration files
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# VS Code
+.vscode/
+
+# STS (Spring Tool Suite)
 .apt_generated
 .classpath
 .factorypath
@@ -13,30 +29,6 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
-
-/target/
-/.idea/
-/mvnw
-/mvnw.cmd
-/.mvn/
-*.class
-*.log
+# Operating System files
 .DS_Store
+Thumbs.db
